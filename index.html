@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!!!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="pager">
+                <div class="arrow up">▲</div>
+                <div class="numbers">
+                    <span class="active" data-section="section1">1</span>
+                    <span data-section="section2">2</span>
+                </div>
+                <div class="arrow down">▼</div>
+            </div>
+        </aside>
+
+        <div class="scroller-container" data-aos-id="container">
+            <section class="page-section section-1" id="section1">
+                <div class="content">
+                    <div class="page1-wrapper">
+                        <div class="pinguin-container">
+                            <img src="penguin.png" alt="gift" class="pinguin">
+                        </div>
+                        <div class="text-group">
+                            <h1 data-aos="fade-right" data-aos-duration="1000">
+                                Happy Birthday<br>Azi
+                            </h1>
+                            <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">"I don't know where the story will take me. However... I'm sure that the place I want to go is the final chapter"</p>
+                        </div>
+                        <div class="illustration-group">
+                            <img src="cake.png" class="cake-image" alt="Pastel">
+                            <img src="red.png" class="balloon b1" alt="Globo">
+                            <img src="white.png" class="balloon b2" alt="Globo">
+                            <img src="red.png" class="balloon b3" alt="Globo">
+                        </div>
+                    </div>
+                </div>
+                <div class="dark-floor"></div>
+            </section>
+
+            <section class="page-section section-2" id="section2">
+                <div class="page2-content">
+                    <h2 class="special-title">A special message for Azi...</h2>
+                    <div class="heart-wrapper" >
+                        <div class="heart-border">
+                            <img src="pony.png" alt="Azi Heart" class="heart-photo">
+                        </div>
+                    </div>
+                    <div class="message-box">
+                        <p >It was on December 11 at 11:45 am when I sent you the first message, 
+                            a message that would lead me to meet an exceptional and wonderful girl, 
+                            and the one that would bring me to celebrate a March 25 that maybe in any other year would have been just an ordinary day, 
+                            but today that day has become special, a day to celebrate with excitement and share with you.
+                            It has been approximately 104 days that I have been getting to know you, days in which I have had the fortune to know you and to share moments surrounded by laughter, jokes, and many feelings... 
+                            thank you for being my friend and above all for tolerating my bad behavior in those times when I feel you don’t pay attention to me or when I feel you don’t care for me like you do for others... 
+                            I hope you don’t come to hate me or get bored of me... I hope you allow me to share more moments with you in the future and have the privilege of being present at your upcoming birthdays... 
+                            I hope you have a great time, not only today, but every day that passes, congratulations and thank you very much for allowing me to be by your side... happy birthday Azi.
+                        </p>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/1.png"></div>
+                            <div class="swiper-slide"><img src="img/2.png"></div>
+                            <div class="swiper-slide"><img src="img/3.png"></div>
+                            <div class="swiper-slide"><img src="img/4.png"></div>
+                            <div class="swiper-slide"><img src="img/5.png"></div>
+                            <div class="swiper-slide"><img src="img/6.png"></div>
+                            <div class="swiper-slide"><img src="img/7.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,       
+            spaceBetween: 900,       
+            loop: true,             
+            autoplay: {
+            delay: 5500,          
+            disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-out-back',
+            once: false,
+            mirror: true,
+            offset: 100,
+            startEvent: 'DOMContentLoaded'
+        });
+    </script>
+</body>
+</html>
